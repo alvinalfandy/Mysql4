@@ -22,11 +22,12 @@ CREATE TABLE pegawai (
     nama_belakang VARCHAR(15) NOT NULL,
     email VARCHAR(25) UNIQUE KEY,
     telepon VARCHAR(15),
-    tgl_kontrak DATA,
+    tgl_kontrak DATE,
     id_job VARCHAR(5),
     gaji INT,
     tunjangan INT
-    );
+);
+
 
 INSERT INTO pegawai VALUES
     ('E001', 'Ferry', 'Gustiawan', 'ferry@yahoo.com', '07117059004', '2005-09-01', 'L0001', 2000000, 500000),
